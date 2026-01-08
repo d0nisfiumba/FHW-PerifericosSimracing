@@ -31,7 +31,7 @@ Para evitar el *tearing* (corte de imagen), el monitor sincroniza sus Hz con los
 ## 4. Matemáticas: El FOV (Field of View)
 El realismo depende de configurar el ángulo de visión correcto según la distancia del usuario.
 
-![Diagrama de cálculo de FOV](img/fov_diagram.jpg)
+![Diagrama de cálculo de FOV](img/triple_setup.jpg)
 > *Figura 2: Esquema de ángulos necesarios para calcular el FOV horizontal en base a la distancia del ojo a la pantalla.*
 
 $$\text{vFOV} = 2 \cdot \arctan\left(\frac{\text{Altura Pantalla}}{2 \cdot \text{Distancia Ojos}}\right)$$
