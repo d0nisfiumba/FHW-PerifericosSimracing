@@ -1,25 +1,36 @@
-# Monitores para Simracing
+[⬅️ Volver al Inicio](README.md)
 
-## 1. Definición
-Es el periférico de **salida** encargado de representar el entorno virtual. En simulación, el monitor es crítico para calcular la velocidad y tener visión periférica (ver rivales a los lados).
+# 🖥️ Sistema Visual: Monitores de Alta Frecuencia
 
-![Monitor Ultrawide Curvo](https://images.samsung.com/is/image/samsung/p6pim/es/lc49g95tssrxen/gallery/es-odyssey-g9-c49g95tssr-lc49g95tssrxen-305626353?$684_547_PNG$)
+El monitor en SimRacing no es solo una pantalla; es la ventana de referencia para la velocidad. Un retraso de milisegundos en la imagen provoca que el piloto frene tarde.
 
-## 2. Características Principales
-* **Tasa de Refresco (Hz):** Imágenes por segundo. Se recomienda **144Hz o superior** para fluidez a alta velocidad.
-* **Tiempo de Respuesta (GtG):** Se busca **1ms o menos** para evitar el "ghosting" (estelas borrosas).
-* **Curvatura (R):** (Ej: 1000R). Cuanto menor el número, más cerrada es la curva, envolviendo al usuario para mayor inmersión.
+## 1. Tecnologías de Panel (La Física del Píxel)
 
-## 3. Tipos de Configuraciones Visuales
-1.  **Monitor Plano (16:9):** Estándar tradicional. Pobre visión lateral (FOV bajo).
-2.  **Ultrawide (21:9 / 32:9):** Monitores panorámicos. Permiten ver espejos retrovisores sin marcos en medio de la imagen.
-3.  **Triple Screen:** Tres monitores unidos. Máxima inmersión y coste, requiere gran potencia de GPU.
+| Tecnología | Estructura del Cristal | Ventaja en SimRacing | Desventaja |
+| :--- | :--- | :--- | :--- |
+| **IPS (In-Plane Switching)** | Cristales paralelos al plano. | Mejores ángulos de visión (clave para monitores triples). | Contraste pobre ("Glow"). |
+| **VA (Vertical Alignment)** | Cristales perpendiculares. | Alto contraste. Muy usado en pantallas curvas (inmersión). | **Black Smearing** (estelas en zonas oscuras). |
+| **OLED (Organic LED)** | Emisión de luz propia por píxel. | **Tiempo de respuesta instantáneo (<0.1ms)**. | Riesgo de quemado (Burn-in) con HUDs fijos. |
 
-## 4. Ejemplo Comercial: Samsung Odyssey G9
-* **Formato:** Super Ultrawide (32:9), equivale a dos monitores de 27" juntos.
-* **Curvatura:** **1000R** (iguala la curvatura natural del ojo humano).
-* **Rendimiento:** 240Hz y 1ms de respuesta.
-* **Panel:** Tecnología QLED para negros profundos y alto contraste en carreras nocturnas.
+## 2. Ancho de Banda y Conectividad
 
----
-[⬅️ Volver al Índice Principal](./README.md)
+Para mover resoluciones altas a muchos FPS, necesitamos un "tubo" de datos muy grande.
+
+* **DisplayPort 1.4:** Soporta hasta **32.4 Gbps**. Es el estándar para PC (permite G-Sync).
+* **HDMI 2.1:** Soporta hasta **48 Gbps**. Necesario para pantallas 4K a 120Hz+ sin compresión.
+
+> **Cálculo de Ancho de Banda:** > Una pantalla "Super Ultrawide" (5120x1440) a 240Hz requiere mover:  
+> $5120 \times 1440 \times 240 \text{ Hz} \times 24 \text{ bits/px} \approx 42.5 \text{ Gbit/s}$  
+> *Conclusión:* Se requiere compresión (DSC) o cables de fibra óptica certificados.
+
+## 3. Sincronización (Handshake GPU-Monitor)
+Para evitar el *tearing* (corte de imagen), el monitor sincroniza sus Hz con los FPS de la GPU usando **VRR (Variable Refresh Rate)**.
+* **G-SYNC (Nvidia):** Usa un chip de hardware propietario en el monitor.
+* **FreeSync (AMD):** Estándar abierto sobre DisplayPort Adaptive-Sync.
+
+## 4. Matemáticas: El FOV (Field of View)
+El realismo depende de configurar el ángulo de visión correcto según la distancia del usuario.
+
+$$\text{vFOV} = 2 \cdot \arctan\left(\frac{\text{Altura Pantalla}}{2 \cdot \text{Distancia Ojos}}\right)$$
+
+*Un FOV incorrecto altera la percepción de la velocidad.*
