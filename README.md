@@ -1,6 +1,9 @@
 # 🏎️ Arquitectura de Hardware en Simulación (SimRacing)
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-Terminado-green) ![Asignatura](https://img.shields.io/badge/Asignatura-Fundamentos_Hardware-blue) ![Plataforma](https://img.shields.io/badge/Plataforma-PC-lightgrey)
+![Setup Profesional de SimRacing](img/triple_monitor.jpg)
+> *Figura 1: Ejemplo de ecosistema completo (Triple monitor + Direct Drive + Pedales Hidráulicos).*
+
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Terminado-green) ... (resto de insignias)
 
 ## 📖 Descripción del Proyecto
 Este repositorio documenta técnicamente el ecosistema de hardware necesario para un simulador de carreras profesional. A diferencia del hardware de oficina o gaming convencional, el *SimRacing* requiere periféricos de **baja latencia**, **alto ancho de banda** y **retroalimentación física (Haptic Feedback)** en tiempo real.
