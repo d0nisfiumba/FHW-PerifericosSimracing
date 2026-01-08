@@ -10,7 +10,7 @@ El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neum
 ### Tipos de Transmisión
 
 ![Comparativa Direct Drive vs Correas](img/direct_drive_motor.webp)
-> *Figura 3: Izquierda: Sistema de correas (pérdida de fuerza por fricción). Derecha: Direct Drive (el eje del motor es la columna de dirección).*
+> *Figura 3: Izquierda: Direct Drive (el eje del motor es la columna de dirección). Derecha: Sistema de correas (pérdida de fuerza por fricción).*
 
 1.  **Engranajes (Gear Driven):** Ruidoso y con holgura mecánica (*deadzone*).
 2.  **Correas (Belt Driven):** Suave, pero la goma absorbe parte de las micro-vibraciones del asfalto.
