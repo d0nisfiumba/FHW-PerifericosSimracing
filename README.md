@@ -1,37 +1,26 @@
-# FHW-SimRacingSetup
+# 🏎️ Arquitectura de Hardware en Simulación (SimRacing)
 
-**Repositorio de documentación técnica sobre periféricos de alto rendimiento para Simulación de Carreras (Simracing).**
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Terminado-green) ![Asignatura](https://img.shields.io/badge/Asignatura-Fundamentos_Hardware-blue) ![Plataforma](https://img.shields.io/badge/Plataforma-PC-lightgrey)
 
-Este repositorio analiza en profundidad el ecosistema de hardware necesario para un simulador profesional, desglosando tanto los dispositivos de entrada/salida táctiles (Volantes Direct Drive) como los dispositivos de salida visual (Monitores de alta frecuencia).
+## 📖 Descripción del Proyecto
+Este repositorio documenta técnicamente el ecosistema de hardware necesario para un simulador de carreras profesional. A diferencia del hardware de oficina o gaming convencional, el *SimRacing* requiere periféricos de **baja latencia**, **alto ancho de banda** y **retroalimentación física (Haptic Feedback)** en tiempo real.
+
+El objetivo es analizar cómo fluyen los datos desde la entrada física (volante) hasta la salida visual (monitor), pasando por el procesamiento de la CPU/GPU.
+
+## 🗂️ Estructura del Documentación
+
+| Módulo | Descripción Técnica |
+| :--- | :--- |
+| **[1. Sistema Visual (Monitores)](monitores.md)** | Análisis de paneles, ancho de banda (HDMI/DP), sincronización vertical y cálculo de FOV. |
+| **[2. Sistema de Control (Volantes)](volantes.md)** | Ingeniería de motores Direct Drive, sensores Hall, Células de Carga y protocolos USB. |
+| **[3. Arquitectura y Comunicación](arquitectura.md)** | **Diagramas de flujo**, latencia "End-to-End", Polling Rate y cuellos de botella. |
+
+## 🛠️ Tecnologías Analizadas
+* **Protocolos:** USB HID, HDMI 2.1, DisplayPort 1.4.
+* **Física:** Torque (Nm), Fuerza G, Presión hidráulica (Load Cell).
+* **Renderizado:** Ray Tracing, VRR (G-Sync/FreeSync).
 
 ---
-
-## 📚 Índice de Contenidos
-
-Haz clic en los siguientes enlaces para acceder a la documentación detallada de cada periférico:
-
-### 🏎️ [1. Sistema de Control: Volantes y Pedales](./volantes.md)
-* **Enfoque:** Periféricos de Entrada/Salida (E/S).
-* **Contenido:** Tecnología Force Feedback, Direct Drive vs Correas, y sensores de Célula de Carga.
-* **Ejemplo analizado:** Moza Racing R5 Bundle.
-
-### 🖥️ [2. Sistema Visual: Monitores de Simulación](./monitores.md)
-* **Enfoque:** Periféricos de Salida.
-* **Contenido:** Tasa de refresco, tiempo de respuesta y curvatura inmersiva.
-* **Ejemplo analizado:** Samsung Odyssey G9.
-
----
-
-## 📝 Conclusiones Globales
-La evolución de los periféricos de simulación ha permitido pasar de simples juguetes a herramientas de entrenamiento profesional.
-* La combinación de una base **Direct Drive** y un monitor **Ultrawide** es el estándar actual.
-* Mientras el volante aporta la memoria muscular y la información del asfalto (hardware de entrada/salida táctil), el monitor aporta la velocidad y posicionamiento (hardware de salida visual).
-* Es crítico que ambos periféricos tengan **baja latencia** para mantener la inmersión y el realismo.
-
-## 👤 Autor
-* **Daniel González Hidalgo**
-* **Curso:** 1º ASIR
-* **Asignatura:** Fundamentos de Hardware
-
-## 📄 Licencia
-Este proyecto está bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+**Autor:** Daniel González Hidalgo  
+**Curso:** 1º ASIR / DAM / DAW  
+**Licencia:** MIT
