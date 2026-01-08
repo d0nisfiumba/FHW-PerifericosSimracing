@@ -1,35 +1,32 @@
-# Volantes y Pedales (Sim Racing Setup)
+[⬅️ Volver al Inicio](README.md)
 
-## 1. Definición
-El sistema de control de simulación es un conjunto de **dispositivos mixtos (E/S)**:
-* **El Volante:** Actúa como **entrada** (enviando el giro y botones) y como **salida**, recibiendo información física del ordenador a través del sistema **Force Feedback (FFB)**.
-* **Los Pedales:** Son dispositivos de **entrada** puros que controlan aceleración y frenada.
+# 🏎️ Sistema de Control: Volantes y Pedales
 
-![Esquema de un volante Direct Drive](https://mozaracing.com/wp-content/uploads/2022/08/R5-Bundle-1.png)
-*(Nota: Puedes cambiar esta imagen por una subida a tu repo)*
+El conjunto volante-pedales es un sistema mixto de **Entrada (Input)** y **Salida (Output)** háptica.
 
-## 2. Características Principales
-* **Force Feedback (FFB) / Par Motor:** Es la fuerza que ejerce el motor para simular físicas (baches, derrapes). Se mide en **Newton-metro (Nm)**.
-* **Tecnología de Pedales (Load Cell):** A diferencia de los pedales básicos que miden distancia (potenciómetros), los pedales de gama alta usan **Célula de Carga**, midiendo la **presión (kg)** ejercida, igual que un coche real.
-* **Resolución:** La precisión en bits con la que el volante detecta el ángulo de giro.
+## 1. El Volante: Ingeniería del Force Feedback (FFB)
+El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neumáticos) y genera una fuerza contraria (Torque) medida en **Newton-metro (Nm)**.
 
-## 3. Tipos de Tecnologías (Base del Volante)
-Existen tres arquitecturas principales:
+### Tipos de Transmisión
+1.  **Engranajes (Gear Driven):** Ruidoso y con holgura mecánica (*deadzone*).
+2.  **Correas (Belt Driven):** Suave, pero la goma absorbe parte de las micro-vibraciones del asfalto.
+3.  **Direct Drive (DD):** El volante está montado directamente sobre el eje del motor.
+    * **Ventaja:** Sin intermediarios. Respuesta 1:1.
+    * **Slew Rate:** Velocidad de cambio de fuerza casi instantánea.
 
-| Tipo | Descripción | Ventajas/Desventajas |
-| :--- | :--- | :--- |
-| **Engranajes (Gear)** | Un motor mueve engranajes dentados. | ❌ Ruidoso y con holgura. ✅ Barato. |
-| **Correa (Belt)** | Correas de goma transmiten la fuerza. | ✅ Suave y silencioso. ❌ Pierde detalle fino. |
-| **Direct Drive (DD)** | El volante va conectado al eje del motor. | ✅ Respuesta inmediata (1:1), máxima potencia. ❌ Precio más alto. |
+### Sensores de Posición (Encoder)
+¿Cómo sabe el PC cuánto hemos girado?
+* **Potenciómetro:** Resistencia física variable por contacto (se desgasta y ensucia).
+* **Sensor Hall (Magnético):** Mide cambios en el campo magnético sin contacto físico. **Vida útil infinita** y mayor resolución (12-16 bits).
 
-## 4. Ejemplo Comercial: Moza R5 Bundle
-Analizamos este modelo por ser el referente actual en calidad/precio:
+## 2. Los Pedales: Célula de Carga vs Potenciómetro
+La diferencia fundamental es física:
 
-* **Tecnología:** Direct Drive (DD).
-* **Potencia:** 5.5 Nm de par motor (suficiente para sentir pérdida de tracción sin fatiga extrema).
-* **Construcción:** Aleación de aluminio de aviación para disipación pasiva (sin ventiladores).
-* **Pedales (SR-P Lite):** Acero de alta resistencia con sensor Hall (magnético) para evitar desgaste.
-* **Software:** *Moza Pit House*, permite ajustar las curvas de fuerza y ecualizar las sensaciones del asfalto.
+* **Pedales Básicos (Potenciómetro):** Miden **distancia**. El PC frena al 100% si el pedal recorre el 100% del camino.
+* **Pedales Profesionales (Load Cell):** Miden **presión (Kg)**. Usan una *galga extensiométrica* que varía su resistencia al deformarse el metal.
+    * *Realismo:* Puedes tener un pedal duro como una piedra; frenará más cuanto más fuerte pises, imitando un circuito hidráulico real.
 
----
-[⬅️ Volver al Índice Principal](./README.md)
+## 3. Resolución Digital
+La precisión se mide en bits.
+* **8-bit:** 256 pasos de lectura (movimiento escalonado).
+* **16-bit:** 65.536 pasos de lectura (movimiento fluido y quirúrgico).
