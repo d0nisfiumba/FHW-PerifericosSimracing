@@ -30,6 +30,7 @@ El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neum
 La diferencia fundamental es física:
 
 * **Pedales Básicos (Potenciómetro):** Miden **distancia**. El PC frena al 100% si el pedal recorre el 100% del camino.
+  <br> <img src="img/pedalesmoza.webp" alt="Pedales moza" width="100%">
 * **Pedales Profesionales (Load Cell):** Miden **presión (Kg)**. Usan una *galga extensiométrica* que varía su resistencia al deformarse el metal.
     * *Realismo:* Puedes tener un pedal duro como una piedra; frenará más cuanto más fuerte pises, imitando un circuito hidráulico real.
 
