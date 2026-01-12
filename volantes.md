@@ -13,10 +13,13 @@ El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neum
 > *Figura 3: Izquierda: Direct Drive (el eje del motor es la columna de dirección). Derecha: Sistema de correas (pérdida de fuerza por fricción).*
 
 1.  **Engranajes (Gear Driven):** Ruidoso y con holgura mecánica (*deadzone*).
-2.  **Correas (Belt Driven):** Suave, pero la goma absorbe parte de las micro-vibraciones del asfalto.
+   <br> <img src="img/g29.jpeg" alt="Volante logitech" width="100%">
+3.  **Correas (Belt Driven):** Suave, pero la goma absorbe parte de las micro-vibraciones del asfalto.
+   ![Volante gear belt](img/t300.webp)
 3.  **Direct Drive (DD):** El volante está montado directamente sobre el eje del motor.
     * **Ventaja:** Sin intermediarios. Respuesta 1:1.
     * **Slew Rate:** Velocidad de cambio de fuerza casi instantánea.
+   ![Volante DD](img/moza.webp)
 
 ### Sensores de Posición (Encoder)
 ¿Cómo sabe el PC cuánto hemos girado?
