@@ -5,7 +5,10 @@
 El conjunto volante-pedales es un sistema mixto de **Entrada (Input)** y **Salida (Output)** háptica.
 
 ## 1. El Volante: Ingeniería del Force Feedback (FFB)
-El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neumáticos) y genera una fuerza contraria (Torque) medida en **Newton-metro (Nm)**.
+El motor no solo vibra; recibe datos de telemetría (suspensión, agarre d
+
+
+e neumáticos) y genera una fuerza contraria (Torque) medida en **Newton-metro (Nm)**.
 
 ### Tipos de Transmisión
 
@@ -20,6 +23,18 @@ El motor no solo vibra; recibe datos de telemetría (suspensión, agarre de neum
     * **Ventaja:** Sin intermediarios. Respuesta 1:1.
     * **Slew Rate:** Velocidad de cambio de fuerza casi instantánea.
    ![Volante DD](img/moza.webp)
+
+<br>
+<div align="center">
+  <h3>🎥 Prueba de Sonido (Formato Vertical)</h3>
+  <p><em>Haz clic para escuchar la diferencia mecánica.</em></p>
+  
+  <video src="https://github.com/user-attachments/assets/85f320d1-b693-4901-9675-e19f982749aa" width="350" controls>
+    Tu navegador no soporta la reproducción de video nativa.
+  </video>
+  
+</div>
+<br>
 
 ### Sensores de Posición (Encoder)
 ¿Cómo sabe el PC cuánto hemos girado?
