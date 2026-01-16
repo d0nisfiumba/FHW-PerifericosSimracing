@@ -16,7 +16,6 @@ El objetivo es analizar cómo fluyen los datos desde la entrada física (volante
 | :--- | :--- |
 | **[1. Sistema Visual (Monitores)](monitores.md)** | Análisis de paneles, ancho de banda (HDMI/DP), sincronización vertical y cálculo de FOV. |
 | **[2. Sistema de Control (Volantes)](volantes.md)** | Ingeniería de motores Direct Drive, sensores Hall, Células de Carga y protocolos USB. |
-| **[3. Arquitectura y Comunicación](arquitectura.md)** | **Diagramas de flujo**, latencia "End-to-End", Polling Rate y cuellos de botella. |
 
 ## 🛠️ Tecnologías Analizadas
 * **Protocolos:** USB HID, HDMI 2.1, DisplayPort 1.4.
