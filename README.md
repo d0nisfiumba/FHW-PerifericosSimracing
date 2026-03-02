@@ -24,5 +24,5 @@ El objetivo es analizar cómo fluyen los datos desde la entrada física (volante
 
 ---
 **Autor:** Daniel González Hidalgo  
-**Curso:** 1º ASIR / DAM / DAW  
+**Curso:** 1º ASIR
 **Licencia:** MIT
